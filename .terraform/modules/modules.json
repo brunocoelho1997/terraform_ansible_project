@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"dev-host","Source":"./modules/environment-host","Dir":"modules/environment-host"},{"Key":"prd-host","Source":"./modules/environment-host","Dir":"modules/environment-host"}]}
