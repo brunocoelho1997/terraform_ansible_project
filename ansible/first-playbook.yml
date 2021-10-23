@@ -30,20 +30,9 @@
       msg: "Ubuntu version output: {{ubuntu_version.stdout}}"
 
 
-  - name: Test Docker with hello world example
-    shell: "docker run hello-world"
-    register: hello_world_output
 
-  - name: Show output of hello word example
-    debug:
-      msg: "Container Output: {{hello_world_output.stdout}}"
+  roles:
+    - docker_role
 
-  - name: Save all docker instances
-    shell: docker ps -a
-    register: docker_ps_a_output
-
-  - name: Show output of all docker instances
-    debug:
-      msg: "Docker instances output: {{docker_ps_a_output.stdout}}"
 
   
